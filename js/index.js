@@ -58,9 +58,13 @@ for (let i = 0; i < navHeader.length; i++) {
   navHeader[i].append(siteContent['nav']['nav-item-1']);
 }
 
-const cta = document.getElementsByClassName('cta-text');
-
+let cta = document.querySelector('h1');
+cta.append(siteContent['cta']['h1']);
 console.log(cta);
 
+let button = document.querySelector('button');
+button.append(siteContent['cta']['button']);
+console.log(button);
 
-
+let ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
